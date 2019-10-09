@@ -12,7 +12,7 @@ void main() {
 		scanf("%d",&btime[i]);
 		i++;
 	}
-	wtime[0] = 0;
+	wtime[0] = 0;   // waiting time for first process is 0
 	while (i<n) {
 		wtime[i+1] = wtime[i] + btime[i];
 		ttime[i] = wtime[i] + btime[i];
